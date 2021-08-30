@@ -5,9 +5,11 @@ Wanna run jenkins in your cli? Use goose!
 
 To install
 ```git clone git@github.com:rallyhealth/goose.git
- cd Goose
+ cd goose
  go install .
 ```
+
+(go needs to be previously installed on your system)
 
 ## Command Summary
 
@@ -16,6 +18,7 @@ To install
 
 Goose run will invoke a jenkins job based on the current git directory and branch.
 If you want to pick a job manually, specify the path of the job.
+Running goose with the syntax below assumes your go binaries path is on your system path. If not, you can replace 'goose' with 'go run .' from your goose directory.
 
 ```
 goose run # Will list available jobs based on your directory
