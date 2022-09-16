@@ -40,9 +40,10 @@ import (
 // runCmd represents the run command
 
 var runCmd = &cobra.Command{
-	Use:   "run",
-	Args:  cobra.ArbitraryArgs,
-	Short: "Run a jenkins job",
+	Use:     "run",
+	Aliases: []string{"honk"},
+	Args:    cobra.ArbitraryArgs,
+	Short:   "Run a jenkins job",
 	Long: `Run a jenkins job based on the current git repo and branch.
 
 	Otherwise, you can specify a job to be run.
